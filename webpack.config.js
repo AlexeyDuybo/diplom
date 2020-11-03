@@ -36,6 +36,7 @@ module.exports = {
         ],
         alias: {
             'client': path.join(__dirname, 'src', 'client'),
+            'config': path.join(__dirname, 'config.ts'),
         },
     },
 };

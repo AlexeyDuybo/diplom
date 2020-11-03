@@ -16,9 +16,11 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "baseUrl": "./",
+        "allowJs": true,
         "paths": {
             "server/*": ["src/server/*"],
-            "client/*": ["src/client/*"]
+            "client/*": ["src/client/*"],
+            "config": ["config.ts"]
         }
     },
     "exclude": ["node_modules"],

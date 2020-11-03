@@ -1,11 +1,11 @@
-import express from 'express';
+import moduleAlias from 'module-alias';
+import path from 'path';
 
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('test');
+moduleAlias.addAliases({
+    config: path.join(__dirname, '..', '..', 'config.ts'),
+    server: path.join(__dirname, './'),
 });
 
-app.listen(3000, () => {
-    console.log('server listen in 3000 port');
-});
+
+import app from 'server/app';
+app();
