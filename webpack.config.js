@@ -16,6 +16,15 @@ module.exports = {
                 include: path.join(__dirname, 'src', 'client'),
                 loader: 'babel-loader',
             },
+            {
+                test: /\.scss$/,
+                include: path.join(__dirname, 'src', 'client'),
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
         ],
     },
     plugins: [
@@ -37,6 +46,8 @@ module.exports = {
         alias: {
             'client': path.join(__dirname, 'src', 'client'),
             'config': path.join(__dirname, 'config.ts'),
+            'components': path.join(__dirname, 'src', 'client', 'components'),
+            'style': path.join(__dirname, 'src', 'client', 'style'),
         },
     },
 };

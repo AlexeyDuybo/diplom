@@ -20,7 +20,10 @@
         "paths": {
             "server/*": ["src/server/*"],
             "client/*": ["src/client/*"],
-            "config": ["config.ts"]
+            "components/*": ["src/client/components/*"],
+            "config": ["config.ts"],
+            "types/*": ["src/client/types/*"],
+            "style/*": ["src/client/style/*"]
         }
     },
     "exclude": ["node_modules"],

@@ -1,7 +1,9 @@
 import express from 'express';
 import config from 'config';
+import DB from 'server/utils/db';
 
 const app = express();
+new DB();
 
 app.get('/', (req, res) => {
     const origin = req.headers.origin;

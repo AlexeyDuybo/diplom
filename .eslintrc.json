@@ -22,6 +22,16 @@
     "rules": {
         "indent": ["error", 4],
         "react/react-in-jsx-scope": "off",
-        "object-curly-spacing": ["error", "always"]
+        "object-curly-spacing": ["error", "always"],
+        "max-len": ["error", 120],
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }]
     }
 }
