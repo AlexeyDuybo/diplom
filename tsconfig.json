@@ -23,7 +23,8 @@
             "components/*": ["src/client/components/*"],
             "config": ["config.ts"],
             "types/*": ["src/client/types/*"],
-            "style/*": ["src/client/style/*"]
+            "style/*": ["src/client/style/*"],
+            "library/*": ["src/storybook/library/*"]
         }
     },
     "exclude": ["node_modules"],

@@ -6,7 +6,8 @@
   "scripts": {
     "server": "ts-node-dev --respawn --transpile-only  ./src/server/index.ts",
     "client": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "sb": "./src/storybook/node_modules/.bin/start-storybook -p 6006 --no-dll -c ./src/storybook/.storybook"
   },
   "keywords": [],
   "author": "",

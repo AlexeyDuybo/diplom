@@ -14,5 +14,5 @@ if (root !== null) {
         </Provider>
         , root);
 } else {
-    throw new Error('no cantainer elements for project');
+    throw new Error('no cantainer element for project');
 }

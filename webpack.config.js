@@ -13,12 +13,12 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                include: path.join(__dirname, 'src', 'client'),
+                include: path.join(__dirname, 'src'),
                 loader: 'babel-loader',
             },
             {
                 test: /\.scss$/,
-                include: path.join(__dirname, 'src', 'client'),
+                include: path.join(__dirname, 'src'),
                 use: [
                     'style-loader',
                     'css-loader',
@@ -48,6 +48,7 @@ module.exports = {
             'config': path.join(__dirname, 'config.ts'),
             'components': path.join(__dirname, 'src', 'client', 'components'),
             'style': path.join(__dirname, 'src', 'client', 'style'),
+            'library': path.join(__dirname, 'src', 'storybook', 'library'),
         },
     },
 };
