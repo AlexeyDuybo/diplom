@@ -1,0 +1,82 @@
+@import 'style/vars.scss';
+
+    .text-input {
+        position: relative;
+
+        &__content {
+            border-radius: 100px;
+            outline: none;
+            padding: 4px 11px;
+            display: block;
+            border: 1px solid $color_black;
+            font-size: 14px;
+            background-color: $color_white;
+            &:hover {
+                background-color: darken($color_white, 5);
+            };
+            
+        };
+
+        &_red {
+            .text-input__content {
+                border-color: $color_red;
+                &:hover {
+                    background-color: rgba($color_red, 0.05);
+                };
+            }
+
+            &::after {
+                color: $color_red;
+            }
+        }
+
+        &_green {
+            .text-input__content {
+                border-color: $color_green;
+                &:hover {
+                    background-color: rgba($color_green, 0.05);
+                };
+            }
+
+            &::after {
+                color: $color_green;
+            }
+
+        }
+
+        &_blue {
+            .text-input__content {
+                border-color: $color_blue;
+
+                &:hover {
+                    background-color: rgba($color_blue, 0.05);
+                };
+            }
+
+            &::after {
+                color: $color_blue;
+            }
+
+        }
+
+        &::after {
+            top: 0;
+            transform: translate(0, 50%);
+            content: attr(data-input-place-holder-text);
+            position: absolute;
+            left: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            transition: transform 0.2s linear;
+        }
+
+        &_focused {
+            .text-input__content {
+                padding: 8px 11px 0 11px;
+            }
+
+            &::after {
+                transform: translate(0, 0%);
+            }
+        }
+    }

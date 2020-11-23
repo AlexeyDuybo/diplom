@@ -5,7 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "google"
+        "google",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -24,6 +25,29 @@
         "react/react-in-jsx-scope": "off",
         "object-curly-spacing": ["error", "always"],
         "max-len": ["error", 120],
+        "@typescript-eslint/indent": ["error", 4],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+            "multiline": {
+                "delimiter": "comma",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "comma",
+                "requireLast": true
+            }
+        }],
+        "react/prop-types": 0,
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-tag-spacing": ["error", 
+            {
+                "closingSlash": "never",
+                "beforeSelfClosing": "always",
+                "afterOpening": "never",
+                "beforeClosing": "allow"
+            }
+        ],
         "require-jsdoc": ["error", {
             "require": {
                 "FunctionDeclaration": false,

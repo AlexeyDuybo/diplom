@@ -1,0 +1,28 @@
+@import 'style/vars.scss';
+
+
+.app {
+    .header {
+        background-color: $color_light_bg;
+        height: 70px;
+
+        &__content {
+            margin: 0 auto;
+            max-width: $size_l;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        & .authorization-buttons {
+            width: 250px;
+            margin-left: auto;
+        }
+    }
+
+    &_dark {
+        .header {
+            background-color: $color_dark_bg;
+        }
+    }
+}

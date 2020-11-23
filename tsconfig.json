@@ -24,7 +24,9 @@
             "config": ["config.ts"],
             "types/*": ["src/client/types/*"],
             "style/*": ["src/client/style/*"],
-            "library/*": ["src/storybook/library/*"]
+            "library/*": ["src/storybook/library/*"],
+            "utils/*": ["src/client/utils/*"],
+            "containers/*": ["src/client/components/*", "src/storybook/library/*"]
         }
     },
     "exclude": ["node_modules"],

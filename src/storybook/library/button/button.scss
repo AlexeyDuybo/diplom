@@ -1,3 +1,70 @@
-.button {
-    width: 300px;
+@import 'style/vars.scss';
+
+.app {
+    .button {
+        display: flex;
+        cursor: pointer;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        outline: none;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 5px 12px;
+        border-width: 1px;
+        background-color: $color_light;
+        color: $color_black;
+        border-color: $color_dark;
+        &_inline {
+            display: inline-flex;
+            width: auto;
+        }
+
+        &:hover {
+            background-color: darken($color: $color_light, $amount: 5);
+        }
+
+        &_red {
+            background-color: $color_red;
+            border-color: $color_light;
+            color: $color_white;
+
+            &:hover {
+                background-color: darken($color: $color_red, $amount: 15);
+            }
+        }
+
+        &_green {
+            background-color: $color_green;
+            border-color: $color_dark;
+            color: $color_black;
+
+            &:hover {
+                background-color: darken($color: $color_green, $amount: 5);
+            }
+        }
+
+        &_blue {
+            background-color: $color_blue;
+            border-color: $color_dark;
+            color: $color_white;
+
+            &:hover {
+                background-color: darken($color: $color_blue, $amount: 5);
+            }
+        }
+    }
+
+    &_dark {
+        .button:not(.button_green):not(.button_red):not(.button_blue) {
+            background-color: $color_dark;
+            color: $color_white;
+            border-color: $color_light;
+
+            &:hover {
+                background-color: lighten($color: $color_dark, $amount: 5);
+            }
+        }
+    }
 }

@@ -47,8 +47,10 @@ module.exports = {
             'client': path.join(__dirname, 'src', 'client'),
             'config': path.join(__dirname, 'config.ts'),
             'components': path.join(__dirname, 'src', 'client', 'components'),
+            'containers': path.join(__dirname, 'src', 'client', 'components'),
             'style': path.join(__dirname, 'src', 'client', 'style'),
             'library': path.join(__dirname, 'src', 'storybook', 'library'),
+            'utils': path.join(__dirname, 'src', 'client', 'utils'),
         },
     },
 };
